@@ -1,0 +1,7 @@
+<h1>Resultado</h1>
+ <p id="mensaje"></p>
+ <script>
+ const urlParams = new URLSearchParams(window.location.search);
+ const nombre = urlParams.get('nombre');
+ document.getElementById('mensaje').textContent = `Hola ${nombre}!`;
+ </script>
